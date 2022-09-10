@@ -2,10 +2,16 @@ function limpar(){
     var A = window.document.getElementById("A")
     var B = window.document.getElementById("B")
     var C = window.document.getElementById("C")
-    A.value = ''
-    B.value = ''
-    C.value = ''
- 
+    var X1P = window.document.getElementById("x1")
+    var X2P = window.document.getElementById("x2")
+    var deltaP = window.document.getElementById("delta")
+    A.value = '0'
+    B.value = '0'
+    C.value = '0'
+    X1P.innerHTML= '0';
+    X2P.innerHTML = '0'
+    deltaP.innerHTML = '0'
+    
  }
  function calcular(){
     var A = window.document.getElementById("A")
