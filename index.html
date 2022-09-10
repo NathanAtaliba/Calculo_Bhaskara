@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/conta.js"></script>
+    <title>BHASKARA</title>
+</head>
+<body>
+    <section>
+<div class="body">
+    <h1 class="titulo">Calculo Equação 2 grau:</h1>
+    <h1 class="equacao">AX²+BX+C=0</h1>
+    <label>Entre com o valor de A:</label>
+    <input id="A" class="letraA" type="number" value="0"><br>
+    <label>Entre com o valor de B:</label>
+    <input id="B" class="letraB" type="number" value="0"><br>
+    <label>Entre com o valor de C:</label>
+    <input id="C" class="letraC" type="number" value="0"><br>
+<input class="button1" type="button" value="Calcular" onclick="calcular()">
+<input class="button2" type="button" value="Limpar" onclick="limpar()">
+
+<div class="conta">
+<h1 class="equacaoR">AX²+BX+C=0</h1>
+<h2 class="delta">delta = <label class="del" id="delta">0</label> </h2>
+<h2 class="raiz1">Raiz 1 = <label class="x1" id="x1">0</label> </h2>
+<h2 class="raiz2">Raiz 2 = <label class="x2" id="x2">0</label></h2>
+</div>
+</div>
+    </section>
+</body>
+</html>
