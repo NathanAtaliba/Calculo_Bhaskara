@@ -26,8 +26,8 @@ function limpar(){
 
     DELTA = (B.value) **2 -4*(A.value)*(C.value)
     if(DELTA>0){
-      X1 = (-(B.value)+ DELTA **(1/2))/2*(A.value)
-      X2 = (-(B.value)- DELTA **(1/2))/2*(A.value)
+      X1 = (-(B.value)+ (DELTA **(1/2)))/(2*(A.value))
+      X2 = (-(B.value)- (DELTA **(1/2)))/(2*((A.value)))
       deltaP.innerHTML = String(DELTA)
       X1P.innerHTML = String(X1)
       X2P.innerHTML = String(X2)
@@ -38,7 +38,7 @@ function limpar(){
       X2P.innerHTML = `indefinido`
     }
     else{
-      X1 = (-(B.value)+ DELTA **(1/2))/2*(A.value)
+      X1 = (-(B.value)+ (DELTA **(1/2)))/(2*(A.value))
       deltaP.innerHTML = String(DELTA)
       X1P.innerHTML = String(X1)
       X2P.innerHTML = `Raiz 1`
