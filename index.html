@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +10,15 @@
 <body>
     <section>
         <div class="corpo">
-        <label>A = </label><input class="A" type="number" value="0"><br>
-        <label>B = </label><input class="B" type="number" value="0"><br>
-        <label>C = </label><input class="C" type="number" value="0"><br>
+        <label>A = </label><input id="A" class="A" type="number" value="0"><br>
+        <label>B = </label><input id="B"class="B" type="number" value="0"><br>
+        <label>C = </label><input id="C" class="C" type="number" value="0"><br>
         <div class="resultado">
-            <label >DELTA = </label><label id="DELTA"></label><br>
-            <label >X1 = </label><label id="X1"></label><br>
-            <label >X2 = </label><label id="X2"></label><br>
+            <label >DELTA = </label><label id="DELTA">0</label><br>
+            <label >X1 = </label><label id="X1">0</label><br>
+            <label >X2 = </label><label id="X2">0</label><br>
             <input class="botao" type="button" value="CALCULAR" onclick="calcular()">
+            <input class="botao" type="button" value="LIMPAR" onclick="limpar()">
         </div>
         </div>
     </section>
