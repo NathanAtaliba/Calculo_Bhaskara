@@ -17,3 +17,41 @@ function limpar(){
     B.value = "0"
     C.value = "0"
 }
+
+function escolha(esc){
+    var checked = 0
+    if(esc==1){      
+        //SALVANDO ELEMENTOS
+        var c = document.getElementById("C")
+        var cl = document.getElementById("CL")
+        var x2 = document.getElementById("X2L")
+        var x2l = document.getElementById("X2L")
+        var delta = document.getElementById("DELTA")
+        var deltal = document.getElementById("DELTAL")
+        //REMOVENDO ELEMENTOS DA TELA
+    document.getElementById("C").remove() 
+    document.getElementById("CL").remove()
+    document.getElementById("DELTAL").remove()
+    document.getElementById("DELTA").remove()
+    document.getElementById("X2L").remove()
+    document.getElementById("X2").remove()
+    checked = 1
+}   
+    else{   
+       // c.insertAdjacentHTML('afterend', '<div class="resultado" id="resultado">')
+if(checked==1){
+       // Buscar elemento pai
+        var elemento_pai = document.getElementById("resultado");
+        // Criar elemento
+        var titulo = document.createElement('label');
+        // Criar o nó de texto
+        var texto = document.createTextNode("X2 = 0");
+        // Anexar o nó de texto ao elemento h1
+        titulo.appendChild(texto);
+        // Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
+        elemento_pai.appendChild(titulo); 
+      //  checked = 0
+    }
+    }
+    }
+    

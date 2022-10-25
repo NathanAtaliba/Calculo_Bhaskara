@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>bhaskara</title>
 </head>
 <body>
     <section>
-        <div class="corpo">
+        <div class="corpo" id="corpo"><br>
+        <p class="titulo">Calculo Equações:</p><br>
+        <h3><input type="radio"  name="escolha" value="1" id="escolha1" onclick="escolha(1)"> Equação de grau 1</h3>
+        <h3><input type="radio"  name="escolha" value="2" id="escolha2" onclick="escolha(2)"> Equação de grau 2</h3>
         <label>A = </label><input id="A" class="A" type="number" value="0"><br>
         <label>B = </label><input id="B"class="B" type="number" value="0"><br>
-        <label>C = </label><input id="C" class="C" type="number" value="0"><br>
-        <div class="resultado">
-            <label >DELTA = </label><label id="DELTA">0</label><br>
-            <label >X1 = </label><label id="X1">0</label><br>
-            <label >X2 = </label><label id="X2">0</label><br>
+        <label id="CL">C = </label><input id="C" class="C" type="number" value="0"><br>
+        <div class="resultado" id="resultado">
+            <label id="DELTAL">DELTA = </label><label id="DELTA">0</label><br>
+            <label id="X1L">X1 = </label><label id="X1">0</label><br>
+            <label id="X2L">X2 = </label><label id="X2">0</label><br>
             <input class="botao" type="button" value="CALCULAR" onclick="calcular()">
             <input class="botao" type="button" value="LIMPAR" onclick="limpar()">
         </div>
